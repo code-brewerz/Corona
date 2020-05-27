@@ -1,0 +1,60 @@
+body{
+
+  text-align: center;
+}
+#record,label,h1{
+  color: #3F72AF;
+
+}
+
+.navbar-brand{
+  color: white;
+}
+.form{
+  width: 20em;
+  margin: 2em auto;
+  border: 0.1em solid #3F72AF;
+  border-radius: 20%
+}
+
+
+.content{
+  margin: 1em auto;
+
+}
+.content select{
+  width: 10em;
+}
+
+.result{
+  margin: 2em;
+}
+.row div{
+  border: 1em solid white;
+}
+.row h3{
+  margin: auto;
+}
+
+#title{
+  background-color: #162447;
+
+  margin-top: 2em;
+}
+
+.temp{
+  margin: 1em auto;
+  width: 21em;
+  height: 20em;
+  border-radius: 20%;
+  background-color: #3F72AF;
+  color: white;
+}
+
+
+.footer{
+  color: white;
+  background-color: #162447;
+  margin: auto;
+  padding-top: 1em;
+}

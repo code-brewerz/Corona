@@ -1,0 +1,71 @@
+<%- include("partials/header"); -%>
+<div class="Heading">
+  <h1><strong>LATEST COVID-19 UPDATES</strong></h1>
+</div>
+
+<div class="form form">
+
+  <form id="corona_form" action="/" method="post">
+
+    <div class="content">
+    <label for="countySelect"><h4>Country</h4></label>
+    <br>
+    <select class="custom-select custom-select-lg " name="country" id="countySel" size="1" required>
+      <option value="" selected="selected">Select Country</option>
+    </select>
+    </div>
+
+    <div class="content">
+      <label for="stateSelect"><h4>State</h4></label>
+      <br>
+      <select class="custom-select custom-select-lg " name="state" id="stateSel" size="1" required>
+        <option value="" selected="selected">Select State</option>
+      </select>
+    </div>
+
+    <div class="content">
+    <label for="districtSelect "><h4>District</h4></label>
+    <br>
+    <select class="custom-select custom-select-lg " name="district" id="districtSel" size="1" required>
+      <option value="" selected="selected">Select District</option>
+    </select>
+    </div>
+
+    <div class="content">
+      <button class="btn btn-primary" type="submit" >Submit</button>
+    </div>
+
+  </form>
+</div>
+
+<div class="row result">
+  <h3 id="record"><strong>RECORD TIME :<%=DataOfCountry[0]%></strong></h3>
+  <div class="Country col col-lg-4 col-md-4 col-sm-12">
+  <div class="temp">
+    <h3 id="title">Country : India</h3>
+    <h4>Overall Cases :<%=DataOfCountry[1]%></h4>
+    <h4>Active  Cases :<%=DataOfCountry[2]%></h4>
+    <h4>Total Deaths :<%=DataOfCountry[3]%></h4>
+    <h4>Recovered Cases :<%=DataOfCountry[4]%></h4>
+  </div>
+  </div>
+  <div class="State col col-lg-4 col-md-4 col-sm-12">
+    <div class="temp">
+      <h3 id="title">State : <%=DataOfState[0]%></h3>
+      <h4>Overall Cases :<%=DataOfState[1]%></h4>
+      <h4>Active  Cases :<%=DataOfState[2]%></h4>
+      <h4>Total Deaths :<%=DataOfState[3]%></h4>
+      <h4>Recovered Cases :<%=DataOfState[4]%></h4>
+    </div>
+  </div>
+  <div class="District col col-lg-4 col-md-4 col-sm-12">
+  <div class="temp">
+    <h3 id="title">District : <%=DataOfDistrict[0]%></h3>
+    <h4>Overall Cases :<%=DataOfDistrict[1]%></h4>
+    <h4>Active  Cases :<%=DataOfDistrict[2]%></h4>
+    <h4>Total Deaths :<%=DataOfDistrict[3]%></h4>
+    <h4>Recovered Cases :<%=DataOfDistrict[4]%></h4>
+  </div>
+  </div>
+</div>
+<%- include("partials/footer"); -%>
